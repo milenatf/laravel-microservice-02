@@ -45,7 +45,7 @@ services:
         networks:
             - microservices02
 
-    # mysql micro 01
+    # mysql micro 02
     db_micro_02:
         image: mysql:5.7.22
         # restart: unless-stopped
@@ -71,4 +71,5 @@ services:
 
 networks:
     microservices02:
+        name: microservices02
         driver: bridge
